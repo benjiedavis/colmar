@@ -40,7 +40,6 @@ main {
 }
 .banner{
     background-color: lightgray;
-    width: 100%;
     display: flex;
     /* align-items: center; */
     padding-top: 64px;
@@ -52,6 +51,7 @@ main {
 .banner.column1{
     width: 60%;
     margin: 32px 0px 32px 24px;
+    min-width: 600px;
 
 }
 .banner.left img{
@@ -77,11 +77,13 @@ h1{
     color:white;
     background-color: rgb(105,105,105);
     font-size: 80%;
+    margin-bottom:16px;
 }
 
 .information{
     display:flex;
     margin: 32px 24px;  
+    flex-wrap: wrap;
 }
 .row {
     display: flex;
@@ -93,18 +95,19 @@ h1{
   .column1 {
     display: flex;
     flex-direction: column;
-    flex-basis: 60%;
+    flex-basis: 0%;
     margin-right: 24px;
-
-
+    flex-grow:60;
 
   }
 
   .column2{
     display: flex;
     flex-direction: column;
-    flex-basis:30%;
+    flex-basis:0%;
     border-left: 1px solid lightgray;
+    flex-grow: 40;
+    
 
 }
 
@@ -124,24 +127,16 @@ h1{
 .item img.mobile{
     display: none;
 }
+.mobile .mobile-nav{
+    display:none;
+}
 
-@media only screen and (max-width: 500px){ 
-    .item img.desktop{
-      display: none;
-    }
- 
-    .item img.mobile{
-      display: block;
-    }
-    .box img{
-        display:none;
-    }
- }
  .item{
      display:flex;
  }
  .learning{
      background-color: lightgray;
+     
  }
 .learning h2{
 text-align: center;
@@ -162,6 +157,7 @@ padding-top: 32px;
 }
 .box img{
     width: 100%;
+    height:auto;
 }
 
 .box h3{
@@ -170,9 +166,106 @@ padding-top: 32px;
 .box p{
     margin: 8px 16px 16px 16px;
 }
+.thesis{
+    margin: 32px 24px;  
+    flex-wrap: wrap;
+}
+.thesis h2{
+    text-align: center;
+    padding-top: 32px;
+    }
 
-
+.grey{
+background-color: lightgray;
+}
 
  video{
-     max-width: 300px;
+     max-width: 100%;
+ }
+
+ footer{
+border-top: 1px solid lightgray;
+margin-top:32px;
+padding: 16px 24px;
+display: flex;
+justify-content: space-between;
+ }
+
+ footer .nav{
+     float:right;
+
+ }
+
+ @media only screen and (max-width: 600px){ 
+    .item img.desktop{
+      display: none;
+    }
+ 
+    .item img.mobile{
+      display: block;
+      width:90%;
+    }
+.banner{
+    margin:0;
+    padding:0;
+}
+
+.banner img{
+margin: 0;
+
+padding:0 0 0 0;
+width:100%;
+}
+
+    .item-text{
+        margin:16px;
+    }
+    .grey{
+        background-color: white;
+    }
+    .learning{
+        background-color: white;
+        width:100%;
+    }
+    .box img{
+        display:none;
+    }
+    .box p{
+        display:none;
+    }
+    .box{
+        background-color: lightgray;
+        width:100%;
+        margin:8px;
+    }
+    .mobile .mobile-nav{
+        display: inline;
+    }
+    .desktop{
+        display: none;
+    }
+    .row {
+        display:block;
+    }
+    .item{
+        display:block;
+    }
+    img.mobile{
+        width:100%;
+    }
+    .column1{
+        width:100%;
+    }
+    .column2{
+
+        border-left: none;
+        
+    
+    }
+    .left h2 {
+        margin: 16px;
+    }
+    .left p {
+        margin: 16px;
+    }
  }

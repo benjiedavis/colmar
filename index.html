@@ -9,8 +9,12 @@
 <body>
     <header>
         <img class="logo" src="resources/images/ic-logo.svg">
-        <span class=colmar>COLMAR</span><span class=academy>ACADEMY</span>
-        <ul>
+        <img class="logo mobile-nav" src="resources/images/ic-on-campus.svg">
+        <img class="logo mobile-nav" src="resources/images/ic-online.svg">
+        <img class="logo mobile-nav" src="resources/images/ic-login.svg">
+
+        <span class="colmar desktop">COLMAR</span><span class="academy desktop">ACADEMY</span>
+        <ul class=desktop>
             <li>Sign In</li>
             <li>For Companies</li>
             <li>Online</li>
@@ -74,7 +78,7 @@
                             </div>
 
                         </div>
-                        <div class=item>
+                        <div class="item grey">
                             <img class=desktop src="resources/images/information-guest-lecture.jpg">
                             <img class=mobile src="resources/images/information-guest-lecture-mobile.jpg">
                             <div class="item-text">
@@ -131,31 +135,46 @@
             </div>
         </section>
         <section class=thesis>
-            <h2>Thesis exhibits</h2>
-            <div class=left>
-                <video autoplay muted loop>
-                    <source src="resources/videos/thesis.mp4" type="video/mp4">
-                    Your browser does not support the video.
-                </video>
-                <h3>Reimaine Urban</h3>
-                <p>Etiam fermentum nisi ipsum, vel lobortis turpis hendrerit interdum. Vivamus venenatis est in lacus
-                    efficitur pellentesque. Suspendisse ac urna velit. Mauris feugiat, lectus eu efficitur laoreet, ante
-                    quam bibendum ligula, quis venenatis mi urna eu quam. Maecenas sed elementum massa, non ultrices ex.
-                    Sed egestas sed velit sed hendrerit.</p>
-            </div>
-            <div class=right>
-                <div class=item>
-                    <img class=desktop src="resources/images/thesis-fisma.jpg">
-                    <h3>Fisma: Design and Prototype</h3>
-                    <p>Designer showcase of new prototype product</p>
-                </div>
+            <h2>Thesis exhibit</h2>
+            <div class=row>
+                <div class=column1>
 
-                <div class=item>
-                    <img class=desktop src="resources/images/thesis-now-and-then.jpg">
-                    <h3>Now and Then</h3>
-                    <p>Research study about New York</p>
+                    <div class=left>
+                        <video autoplay muted loop>
+                            <source src="resources/videos/thesis.mp4" type="video/mp4">
+                            Your browser does not support the video.
+                        </video>
+                        <h3 class=desktop>Reimagine Urban</h3>
+                        <p class=desktop>Etiam fermentum nisi ipsum, vel lobortis turpis hendrerit interdum. Vivamus venenatis est in
+                            lacus
+                            efficitur pellentesque. Suspendisse ac urna velit. Mauris feugiat, lectus eu efficitur
+                            laoreet, ante
+                            quam bibendum ligula, quis venenatis mi urna eu quam. Maecenas sed elementum massa, non
+                            ultrices ex.
+                            Sed egestas sed velit sed hendrerit.
+                        </p>
+                    </div>
+                </div>
+                <div class=column2>
+                    <div class="right desktop">
+                        <div class="item  grey">
+                            <img class=desktop src="resources/images/thesis-fisma.jpg">
+                            <div class="item-text">
+                                <h3>Fisma: Design and Prototype</h3>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+                        <div class=item>
+                            <img class=desktop src="resources/images/thesis-now-and-then.jpg">
+                            <div class="item-text">
+                                <h3>Now and Then</h3>
+                            <p>Research study about New York</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
 
