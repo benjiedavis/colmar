@@ -18,6 +18,9 @@ header .logo{
     min-height: 32px;
     vertical-align: middle;
 }
+.mobile-nav{
+    display: none;
+}
 header .colmar{
     font-weight: bold;
 }
@@ -196,7 +199,7 @@ justify-content: space-between;
 
  }
 
- @media only screen and (max-width: 600px){ 
+ @media (max-width: 600px){ 
     .item img.desktop{
       display: none;
     }
@@ -238,7 +241,10 @@ width:100%;
         width:100%;
         margin:8px;
     }
-    .mobile .mobile-nav{
+    .mobile-nav{
+        display:inline;
+    }
+    .mobile {
         display: inline;
     }
     .desktop{
