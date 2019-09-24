@@ -211,6 +211,8 @@ justify-content: space-between;
 .banner{
     margin:0;
     padding:0;
+    padding-top: 56px;
+
 }
 
 .banner img{
